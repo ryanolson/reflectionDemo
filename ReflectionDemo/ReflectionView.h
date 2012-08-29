@@ -19,8 +19,6 @@
 
 @interface ReflectionView : UIView {
     UIImageView *_reflection;
-    CGFloat _reflectionHeight;
-    CGFloat _reflectionOffset;
 }
 
 // The height of the reflection in display points

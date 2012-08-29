@@ -33,10 +33,6 @@ static CGImageRef CreateGradientImage(int pixelsWide, int pixelsHigh);
 
 @implementation ReflectionView
 
-@synthesize reflectionHeight = _reflectionHeight;
-@synthesize reflectionOffset = _reflectionOffset;
-@dynamic reflectionAlpha;
-
 // MARK: Lifetime management
 
 - (id)initWithFrame:(CGRect)frame
@@ -60,11 +56,6 @@ static CGImageRef CreateGradientImage(int pixelsWide, int pixelsHigh);
     _reflectionHeight = kDefaultReflectionHeight;
     _reflectionOffset = kDefaultReflectionOffset;
     [self addSubview:_reflection]; 
-}
-
-- (void)dealloc {
-    [_reflection release];
-    [super dealloc];
 }
 
 // MARK: Public methods
